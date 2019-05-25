@@ -93,3 +93,39 @@ values
 (3,5),
 # šifra 6
 (3,7);
+
+# testni dodatak
+
+insert into konfiguracija
+(naziv,opis,cijena)
+values
+# šifra 4
+('MagazinRS','gaming računalo',13799.00);
+
+insert into proizvodac
+(naziv,zemlja)
+values
+# šifra 4
+('Asus','Tajvan'),
+# šifra 5
+('ADATA','Tajvan');
+
+insert into komponenta
+(naziv,opis,proizvodac)
+values
+# šifra 8
+('I7-9700K','intelov procesor',1),
+# šifra 9
+('Z370','matična ploča',4),
+# šifra 10
+('SSD Adata Pro 256GB','ssd',5);
+
+insert into dio
+(konfiguracija,komponenta)
+values
+# šifra 7
+(4,8),
+# šifra 8
+(4,9),
+# šifra 9
+(4,10);
