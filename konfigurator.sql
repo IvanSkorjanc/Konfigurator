@@ -143,3 +143,34 @@ values
 #select * from konfiguracija;
 delete from konfiguracija where sifra in (5,6,7);
 #gotovo testno brisanje
+
+#dodavanje proizvodaca
+insert into proizvodac 
+(naziv,zemlja)
+values
+# šifra 6
+('Seagate','Amerika'),
+# šifra 7
+('Maxtor','Amerika'),
+# šifra 8
+('Hitachi','Japan'),
+# šifra 9
+('Western Digital','Amerika'),
+# šifra 10
+('IBM','Amerika'),
+# šifra 11
+('Samsung','Južna Koreja'),
+# šifra 12
+('Fujitsu','Japan'),
+# šifra 13
+('ASRock','Tajvan'),
+# šifra 14
+('Gigabyte','Tajvan'),
+# šifra 15
+('MSI','Tajvan'),
+# šifra 16
+('Akyga','Poljska'),
+# šifra 17
+('Corsair','Amerika'),
+# šifra 18
+('FSP Group','Tajvan');
