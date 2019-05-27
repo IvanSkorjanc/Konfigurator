@@ -43,11 +43,11 @@ insert into konfiguracija
 (naziv,opis,cijena)
 values
 # šifra 1
-('gamerska','za sve na max','20000.00'),
+('gamerska','za sve na max',20000.00),
 # šifra 2
-('srednja','za igre na medium','6000.00'),
+('srednja','za igre na medium',6000.00),
 # šifra 3
-('uredska','za administrativne poslove','3000.00');
+('uredska','za administrativne poslove',3000.00);
 
 insert into proizvodac
 (naziv,zemlja)
@@ -94,8 +94,6 @@ values
 # šifra 6
 (3,7);
 
-# testni dodatak
-
 insert into konfiguracija
 (naziv,opis,cijena)
 values
@@ -129,3 +127,19 @@ values
 (4,9),
 # šifra 9
 (4,10);
+
+
+
+#testno brisanje
+insert into konfiguracija (naziv,opis,cijena)
+values
+# šifra 5
+('MagazinRS Ryzen','ryzenov pc',11349.00),
+# šifra 6
+('MagazinRS gaming stanica','gaming računalo',6799.00),
+# šifra 7
+('Mining rig RX470','mining rig',22999.00);
+
+#select * from konfiguracija;
+delete from konfiguracija where sifra in (5,6,7);
+#gotovo testno brisanje
